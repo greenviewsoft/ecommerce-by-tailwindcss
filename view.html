@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Tailwind Project </title>
+     <link rel="stylesheet" href="./output/tailwind.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- ---- Start Header ----- -->
+
+    <header class="py-4 shadow-sm bg-pink-100 lg:bg-white ">
+        <div class="container flex items-center justify-between ">
+             <!-- logo  -->
+             <a href="#" class="block w-32">
+                  <img src="/images/logo.png" alt="logo" class="w-full" /> 
+             </a>
+             <!-- logo end  -->
+             <!-- search   -->
+             <div class="w-full xl:max-w-xl lg:max-w-lg lg:flex relative hidden ">
+                  <span class="absolute left-4 top-3 text-lg text-gray-400 ">
+                       <i class="fas fa-search"></i>
+                  </span>
+                  <input type="text" class="pl-12 w-full border border-r-0 border-primary  py-3 px-3 rounded-l-md focus:ring-primary " placeholder="Search" />
+                  <button type="submit" class="bg-primary border border-primary text-white px-8 font-medium rounded-r-md hover:bg-transparent hover:text-primary transition  " >
+                       Search
+                  </button> 
+             </div> 
+   
+                  <!-- search End  -->
+   
+             <!-- NavIcons -->
+   
+             <div class="space-x-4 flex items-center ">
+                  <a href="#" class="block text-center text-gray-700 hover:text-primary transition relative " >
+                       <span class=" absolute -right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center  bg-primary text-white text-xs "> 5 </span>
+                       <div class="text-2xl">
+                            <i class="far fa-heart "></i> 
+                       </div>
+                       <div class="text-sm  font-semibold leading-3 ">Wish List</div>
+                  </a>
+   
+   
+                  <a href="#" class="block text-center text-gray-700 hover:text-primary transition relative " >
+                       <span class=" absolute -right-2 -top-1 w-5 h-5 rounded-full flex items-center justify-center  bg-primary text-white text-xs "> 5 </span>
+                       <div class="text-2xl">
+                            <i class="fas fa-shopping-bag "></i> 
+                       </div>
+                       <div class="text-sm font-semibold leading-3 ">Cart</div>
+                  </a>
+   
+   
+                  <a href="#" class="block text-center text-gray-700 hover:text-primary transition relative " >
+   
+                       <div class="text-2xl">
+                            <i class="fas fa-user "></i> 
+                       </div>
+                       <div class="text-sm font-semibold leading-3 ">Account</div>
+                  </a> 
+   
+             </div> 
+              <!-- NavIcons End  -->
+   
+   
+             </div>
+   
+        </header> 
+        <!-- ---- End Header ----- -->
+   
+   
+         <!-- ---- Start NavBar ----- -->
+        <nav class="bg-gray-800 hidden lg:block ">
+             <div class="container">
+                  <div class="flex">
+                      <!-- ---- All Category ----- -->
+                      <div class="px-8 py-4 bg-primary flex items-center cursor-pointer group relative ">
+                           <span class="text-white ">
+                            <i class="fas fa-bars"></i>
+                           </span>
+                       <span class="capitalize ml-2 text-white font-semibold">All categories</span>
+   
+   
+        <div class="absolute left-0 top-full w-full bg-white shadow-md py-3 invisible opacity-0 group-hover:opacity-100 group-hover:visible transition duration-300 z-50 divide-y divide-gray-300 divide-dashed  ">
+                  <!-- ---- Start single category ----- -->
+                  <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition ">
+                  <img src="/images/icons/bed.svg" class="w-5 h-5 object-contain " />
+                  <span class="ml-6 text-gray-700 text-sm font-semibold "> BedRoom</span>
+                  </a>
+                  <!-- ---- single category End ----- -->
+   
+                  <!-- ---- Start single category ----- -->
+                  <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition ">
+                       <img src="/images/icons/sofa.svg" class="w-5 h-5 object-contain " />
+                       <span class="ml-6 text-gray-700 text-sm font-semibold "> Sofa</span>
+                       </a>
+                       <!-- ---- single category End ----- -->
+   
+   
+                       <!-- ---- Start single category ----- -->
+                  <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition ">
+                       <img src="/images/icons/office.svg" class="w-5 h-5 object-contain " />
+                       <span class="ml-6 text-gray-700 text-sm font-semibold "> Office</span>
+                       </a>
+                       <!-- ---- single category End ----- -->
+   
+   
+                       <!-- ---- Start single category ----- -->
+                  <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition ">
+                       <img src="/images/icons/outdoor-cafe.svg" class="w-5 h-5 object-contain " />
+                       <span class="ml-6 text-gray-700 text-sm font-semibold "> OutDoor</span>
+                       </a>
+                       <!-- ---- single category End ----- -->
+   
+   
+                       <!-- ---- Start single category ----- -->
+                  <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition ">
+                       <img src="/images/icons/terrace.svg" class="w-5 h-5 object-contain " />
+                       <span class="ml-6 text-gray-700 text-sm font-semibold "> Mattress</span>
+                       </a>
+                       <!-- ---- single category End ----- -->
+   
+   
+                       <!-- ---- Start single category ----- -->
+                  <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition ">
+                       <img src="/images/icons/sofa.svg" class="w-5 h-5 object-contain " />
+                       <span class="ml-6 text-gray-700 text-sm font-semibold "> Sofa</span>
+                       </a>
+                       <!-- ---- single category End ----- -->
+   
+        </div>
+   
+   
+   
+   
+   
+                      </div>
+   
+                       <!-- ---- All Category End ----- -->
+   
+                       <!-- ---- Nav Menu ----- -->
+   
+        <div class="flex items-center justify-between flex-grow pl-12 ">
+             <div class="flex items-center space-x-6 text-base capitalize ">
+                  <a href="index.html" class="text-gray-200 hover:text-white transition font-semibold " > Home </a>
+                  <a href="shop.html" class="text-gray-200 hover:text-white transition font-semibold " > Shop </a>
+                  <a href="index.html" class="text-gray-200 hover:text-white transition font-semibold " > About Us </a>
+                  <a href="index.html" class="text-gray-200 hover:text-white transition font-semibold " > Contact Us </a> 
+             </div>
+   
+             <a href="login.html" class="ml-auto text-gray-200 hover:text-white transition font-semibold " > Login/Register </a>
+   
+        </div>
+   
+                       <!-- ---- Nav Menu End ----- -->
+   
+                  </div>
+   
+             </div>
+   
+        </nav> 
+          <!-- ---- End NavBar ----- -->
+   
+    <!-- ---- Mobile Menu Bar ----- -->
+   
+    <div class="fixed w-full border-t border-gray-200 shadow-sm bg-white py-3 bottom-0 left-0 flex justify-around items-start px-6 lg:hidden z-40  ">
+   
+        <a href="javascript:void(0)" class="block text-center text-gray-700 hover:text-primary transition relative " >
+             <div class="text-2xl" id="menuBar">
+                  <i class="fas fa-bars"></i>
+             </div>
+             <div class="text-xs leading-3" >Menu</div>
+        </a>
+   
+        <a href="" class="block text-center text-gray-700 hover:text-primary transition relative " >
+             <div class="text-2xl" >
+                  <i class="fas fa-list-ul"></i>
+             </div>
+             <div class="text-xs leading-3" >Category</div>
+        </a>
+   
+        <a href="" class="block text-center text-gray-700 hover:text-primary transition relative " >
+             <div class="text-2xl" >
+                  <i class="fas fa-search"></i>
+             </div>
+             <div class="text-xs leading-3" >Search</div>
+        </a>
+   
+        <a href="" class="block text-center text-gray-700 hover:text-primary transition relative " >
+             <span class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs ">5
+             </span>
+             <div class="text-2xl" >
+                  <i class="fas fa-shopping-bag"></i>
+             </div>
+             <div class="text-xs leading-3" >Cart</div>
+        </a>
+   
+    </div>
+   
+     <!-- ----End Mobile Menu Bar ----- -->  
+   
+      <!-- ---- Mobile Side Bar ----- -->
+   
+      <div class="fixed left-0 top-0 w-full h-full z-50 bg-black bg-opacity-30 shadow hidden " id="mobileMenu">
+           <div class="absolute left-0 top-0 w-72 h-full z-50 bg-white shadow">
+                <div id="closeMenu" class="text-gray-400 hover:text-primary text-lg absolute right-3 top-3 cursor-pointer " >
+                     <i class="fas fa-times"></i> 
+                </div>
+                <h3 class="text-xl font-semibold text-white mb-2 font-roboto pl-4 pt-4 pb-4 bg-primary ">Menu</h3>
+                <div>
+                     <a href="index.html" class="block px-4 py-4 font-medium transition hover:bg-gray-200 " >
+                       Home
+                     </a>
+                     <a href="index.html" class="block px-4 py-4 font-medium transition hover:bg-gray-200 " >
+                       Shop
+                     </a>
+   
+                     <a href="index.html" class="block px-4 py-4 font-medium transition hover:bg-gray-200 " >
+                       About Us
+                     </a>
+                     <a href="index.html" class="block px-4 py-4 font-medium transition hover:bg-gray-200 " >
+                       Contact Us
+                     </a>
+                </div>
+   
+           </div>
+   
+      </div>
+   
+       <!-- ---- End Mobile Side Bar ----- -->
+   
+   
+    <!-- ---- BreadCrum ----- -->
+    <div class="container py-4 flex justify-between " >
+        <div class="flex gap-3 items-center ">
+             <a href="index.html" class="text-primary text-base">
+                 <i class="fas fa-home"></i>
+             </a>
+             <span class="text-sm text-gray-500 ">
+                 <i class="fas fa-chevron-right" ></i>
+             </span>
+             <p class="text-primary font-medium uppercase">Shop</p>
+   
+             <span class="text-sm text-gray-500 ">
+                  <i class="fas fa-chevron-right" ></i>
+              </span>
+              <p class="text-gray-500 font-medium uppercase">ITALIAN L SHAPE SOFA</p>
+   
+        </div>
+   
+   </div>
+    <!-- ---- End BreadCrum --->
+   
+   <!-- ---- Product View  --->
+  <div class="container pt-4 pb-6 grid lg:grid-cols-2 gap-6 ">
+    <!-- ---- Product Image  --->
+  <div>
+       <div>
+            <img id="main-img" src="/images/products/product12.jpg" class="w-full" />
+       </div>
+
+  <div class="grid grid-cols-5 gap-4 mt-4 ">
+
+       <div>
+            <img src="/images/products/product12.jpg" class="single-img w-full cursor-pointer border border-primary " />
+       </div>
+
+       <div>
+            <img src="/images/products/product2.jpg" class="single-img file:w-full cursor-pointer border   " />
+       </div>
+
+       <div>
+            <img src="/images/products/product3.jpg" class="single-img w-full cursor-pointer border   " />
+       </div>
+
+       <div>
+            <img src="/images/products/product4.jpg" class="single-img w-full cursor-pointer border " />
+       </div>
+
+       <div>
+            <img src="/images/products/product5.jpg" class="single-img w-full cursor-pointer border  " />
+       </div>
+  </div>
+  </div>
+
+    <!-- ---- End Product Image  --->
+
+     <!-- ---- Product Content  --->
+     <div>
+        <h2 class="md:text-3xl text-2xl font-medium uppercase mb-2" >ITALIAN L SHAPE SOFA</h2>
+        <div class="flex items-center mb-4">
+             <div class="flex gap-1 text-sm text-yellow-400 ">
+                  <span><i class="fas fa-star"></i> </span>
+                  <span><i class="fas fa-star"></i> </span>
+                  <span><i class="fas fa-star"></i> </span>
+                  <span><i class="fas fa-star"></i> </span>
+                  <span><i class="fas fa-star"></i> </span>
+             </div>
+             <div class="text-xs text-gray-500 ml-3">(150 Reviews)</div>
+        </div>
+
+        <div class="space-y-2">
+             <p class="text-gray-800 font-semibold space-x-2 ">
+                  <span>Availability : </span>
+                  <span class="text-green-600" >In Stock </span>
+             </p>
+
+             <p class="text-gray-800 font-semibold space-x-2 ">
+                  <span>Brand : </span>
+                  <span class="text-gray-600" >Apex </span>
+             </p>
+
+             <p class="text-gray-800 font-semibold space-x-2 ">
+                  <span>Category : </span>
+                  <span class="text-gray-600" >Sofa </span>
+             </p>
+
+             <p class="text-gray-800 font-semibold space-x-2 ">
+                  <span>SKU : </span>
+                  <span class="text-gray-600" >AKHASFD34 </span>
+             </p> 
+        </div>
+
+        <div class="mt-4 flex items-baseline gap-3 ">
+         <span class="text-primary font-semibold text-xl ">$450.00</span>
+        <span class="text-gray-500 text-base line-through">$500.00</span>
+        </div>
+        <p class="mt-4 text-gray-600">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim exercitationem quaerat excepturi labore blanditiis
+        </p>
+
+
+        <!-- ---- Size filter --->
+
+<div class="pt-4">
+   <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium ">Size </h3>
+   <div class="flex items-center gap-2">
+        <!-- ---- Single Size --->
+        <div class="size-selector">
+             <input type="radio" name="size" class="hidden" id="size-s" />
+             <label for="size-s" class="text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-gray-600 " >S</label>
+        </div>
+        <!-- ---- End Single Size --->
+
+          <!-- ---- Single Size --->
+          <div class="size-selector">
+             <input type="radio" name="size" class="hidden" id="size-m" />
+             <label for="size-m" class="text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-gray-600 " >M</label>
+        </div>
+        <!-- ---- End Single Size --->
+
+
+          <!-- ---- Single Size --->
+          <div class="size-selector">
+             <input type="radio" name="size" class="hidden" id="size-l" />
+             <label for="size-l" class="text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-gray-600 " >L</label>
+        </div>
+        <!-- ---- End Single Size --->
+
+
+          <!-- ---- Single Size --->
+          <div class="size-selector">
+             <input type="radio" name="size" class="hidden" id="size-xs" />
+             <label for="size-xs" class="text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-gray-600 " >XS</label>
+        </div>
+        <!-- ---- End Single Size --->
+
+
+          <!-- ---- Single Size --->
+          <div class="size-selector">
+             <input type="radio" name="size" class="hidden" id="size-xl" />
+             <label for="size-xl" class="text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-gray-600 " >XL</label>
+        </div>
+        <!-- ---- End Single Size --->
+
+   </div>
+</div>
+<!-- ---- End Size filter --->
+
+<!-- ----  Color filter --->
+<div class="pt-4">
+   <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium ">Color </h3>
+
+<div class="flex items-center gap-2">
+   <!-- ---- Single Color --->
+   <div class="color-selector">
+        <input type="radio" name="color" class="hidden" id="color-red" checked />
+        <label for="color-red" style="background-color: brown;" class="text-xs border border-gray-200 rounded-sm h-5 w-5 flex items-center justify-center cursor-pointer shadow-sm" ></label>
+
+   </div>
+<!-- ----  End Single Color --->
+
+<!-- ---- Single Color --->
+<div class="color-selector">
+    <input type="radio" name="color" class="hidden" id="color-white"  />
+    <label for="color-white" style="background-color:blueviolet;" class="text-xs border border-gray-200 rounded-sm h-5 w-5 flex items-center justify-center cursor-pointer shadow-sm" ></label>
+
+</div>
+<!-- ----  End Single Color --->
+
+
+<!-- ---- Single Color --->
+<div class="color-selector">
+    <input type="radio" name="color" class="hidden" id="color-black"  />
+    <label for="color-black" style="background-color: #000000;" class="text-xs border border-gray-200 rounded-sm h-5 w-5 flex items-center justify-center cursor-pointer shadow-sm" ></label>
+
+</div>
+<!-- ----  End Single Color --->
+</div> 
+</div>
+
+<!-- ---- End Color filter ---> 
+
+           <!-- ---- Quantity ---> 
+<div class="mt-4">
+     <h3 class="text-base text-gray-800 mb-1" >Quantity</h3>
+     <div class="flex border border-gray-300 text-gray-600 divide-x divide-gray-300 w-max ">
+          <div class="h-8 w-8 text-xl flex items-center justify-center cursor-pointer select-none"> -  </div>
+          <div class="h-8 w-10 flex items-center justify-center"> 5 </div>
+          <div class="h-8 w-8 text-xl flex items-center justify-center cursor-pointer select-none"> +  </div>
+
+     </div> 
+</div> 
+<!-- ---- End Quantity ---> 
+
+
+<!-- ---- ADD TO CART BUTTON ---> 
+
+<div class="flex gap-3 border-b border-gray-200 pb-5 mt-6 ">
+     <a href="/checkout.html" class="bg-primary border border-primary text-white px-8 py-2 font-medium rounded uppercase hover:bg-transparent hover:text-primary transition text-sm flex items-center " >
+          <span class="mr-2"><i class="fas fa-shopping-bag"></i> </span>
+          Add to Cart
+     </a>
+
+
+     <a href="#" class="border border-gray-600 text-gray-600 px-8 py-2 font-medium rounded uppercase hover:bg-transparent hover:text-primary transition text-sm flex items-center " >
+          <span class="mr-2"><i class="fas fa-heart"></i> </span>
+         Whishlist
+     </a>
+
+</div>
+
+
+
+<!-- ---- End ADD TO CART BUTTON ---> 
+
+<!-- ---- Product Share Icon ---> 
+
+<div class="flex space-x-3 mt-4 ">
+     <a href="#" class="text-gray-400 hover:text-gray-600 h-8 w-8 rounded-full border border-gray-300 flex items-center justify-center" >
+          <i class="fab fa-facebook-f"></i>
+     </a>
+     <a href="#" class="text-gray-400 hover:text-gray-600 h-8 w-8 rounded-full border border-gray-300 flex items-center justify-center" >
+          <i class="fab fa-twitter"></i>
+     </a>
+
+     <a href="#" class="text-gray-400 hover:text-gray-600 h-8 w-8 rounded-full border border-gray-300 flex items-center justify-center" >
+          <i class="fab fa-instagram"></i>
+     </a>
+
+</div>
+<!-- End Product Share Icon --> 
+</div>    
+</div>    
+          <!-- ---- Product Details  --->
+          <div class="lg:w-4/5 xl:w-3/5  m-24  ">
+               <div class="space-y-3 text-gray-600">
+                 <p>
+                      Incredible graphics performanceMacBook Air can take on more graphics-intensive projects than ever. For the first time, content creators can edit and seamlessly play back multiple streams of full‑quality 4K video without dropping a frame. 
+                 </p>
+  
+                 <p>
+                      Incredible graphics performanceMacBook Air can take on more graphics-intensive projects than ever. For the first time, content creators can edit and seamlessly play back multiple streams of full‑quality 4K video without dropping a frame.
+                 </p>
+                 <p>
+
+                    Apps on MacBook Air can use machine learning (ML) to automatically retouch photos like a pro, make smart tools such as magic wands and audio filters more accurate at auto‑detection, and so much more. That’s not just brain power — that’s the power of a full stack of ML technologies.
+                    </p>
+                  </div>
+     
+     
+               <table class="table-auto border-collapse w-full text-left text-gray-600 text-sm mt-6" >
+                    <tr>
+                         <th class="py-2 px-4 border border-gray-300 w-40 font-semibold">Color</th>
+                         <td class="py-2 px-4 border border-gray-300  ">Black , Brown , Red  </td>
+     
+                    </tr>
+     
+                    <tr>
+                         <th class="py-2 px-4 border border-gray-300 w-40 font-semibold">Size </th>
+                         <td class="py-2 px-4 border border-gray-300  ">XL, L, M, S  </td>
+     
+                    </tr>
+     
+                    <tr>
+                         <th class="py-2 px-4 border border-gray-300 w-40 font-semibold">Weight </th>
+                         <td class="py-2 px-4 border border-gray-300  ">55kg  </td>
+     
+                    </tr>
+               </table>
+             </div>
+        </div>
+        <!-- ---- End Product Details --->
+
+        <!-- ---- Related Product  --->
+    <div class="container pb-16 ">
+     <h2 class="text-2xl md:text-3xl font-medium text-gray-800 uppercase mb-6  " >Top Related Products </h2>
+     <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-6 ">
+           <!-- ---- Start Single Product  ----- -->
+           <div class="group rounded bg-white shadow overflow-hidden ">
+                <div class="relative ">
+               <img src="/images/products/product1.jpg" class="w-full" /> 
+
+               <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition ">
+              <a href="view.html" class="text-white text-lg w-9 h-9 rounded-full bg-primary hover:bg-gray-800 transition flex  items-center justify-center " >
+                         <i class="fas fa-search"></i> 
+                    </a>
+                    <a href="#" class="text-white text-lg w-9 h-9 rounded-full bg-primary hover:bg-gray-800 transition flex items-center justify-center "  >
+                         <i class="fas fa-heart"></i> 
+                    </a> 
+               </div>  
+                </div>
+
+               <div class="pt-4 pb-3 px-4 ">
+                    <a href="view.html" >
+                         <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition ">Guyer Chair </h4> 
+                    </a>
+
+                   <div class="flex items-baseline mb-1 space-x-2 " >
+                    <p class="text-xl text-primary font-roboto font-semibold "> $45.00 </p>
+                    <p class="text-sm text-gray-400 font-roboto  line-through "> $55.00 </p>
+                   </div> 
+                   <div class="flex items-center ">
+                        <div class="flex gap-1 text-sm text-yellow-400 ">
+                         <span><i class="fas fa-star"></i> </span>
+                         <span><i class="fas fa-star"></i> </span>
+                         <span><i class="fas fa-star"></i> </span>
+                         <span><i class="fas fa-star"></i> </span>
+                         <span><i class="fas fa-star"></i> </span>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-3 ">(120)</div>
+
+                   </div>
+               </div>
+
+               <a href="#" class="block w-full py-1 text-center text-white bg-primary border border-primary rounded-b font-medium hover:bg-transparent hover:text-primary transition " >
+                    Add To Cart 
+               </a>  
+           </div>
+
+            <!-- ---- End Single Product  ----- -->
+
+
+ <!-- ---- Start Single Product  ----- -->
+ <div class="group rounded bg-white shadow overflow-hidden ">
+     <div class="relative ">
+    <img src="/images/products/product2.jpg" class="w-full" /> 
+
+    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition ">
+     <a href="view.html" class="text-white text-lg w-9 h-9 rounded-full bg-primary hover:bg-gray-800 transition flex  items-center justify-center " >
+          <i class="fas fa-search"></i> 
+     </a>
+     <a href="#" class="text-white text-lg w-9 h-9 rounded-full bg-primary hover:bg-gray-800 transition flex items-center justify-center "  >
+          <i class="fas fa-heart"></i> 
+     </a> 
+    </div>  
+     </div>
+
+    <div class="pt-4 pb-3 px-4 ">
+         <a href="view.html" >
+              <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition ">Guyer Chair </h4> 
+         </a>
+
+        <div class="flex items-baseline mb-1 space-x-2 " >
+         <p class="text-xl text-primary font-roboto font-semibold "> $45.00 </p>
+         <p class="text-sm text-gray-400 font-roboto  line-through "> $55.00 </p>
+        </div> 
+        <div class="flex items-center ">
+             <div class="flex gap-1 text-sm text-yellow-400 ">
+              <span><i class="fas fa-star"></i> </span>
+              <span><i class="fas fa-star"></i> </span>
+              <span><i class="fas fa-star"></i> </span>
+              <span><i class="fas fa-star"></i> </span>
+              <span><i class="fas fa-star"></i> </span>
+             </div>
+             <div class="text-xs text-gray-500 ml-3 ">(120)</div>
+
+        </div>
+    </div>
+    <a href="#" class="block w-full py-1 text-center text-white bg-primary border border-primary rounded-b font-medium hover:bg-transparent hover:text-primary transition " >
+     Add To Cart 
+</a>  
+</div>
+<!-- ---- End Single Product  ----- -->
+
+
+  <!-- ---- Start Single Product  ----- -->
+  <div class="group rounded bg-white shadow overflow-hidden ">
+     <div class="relative ">
+    <img src="/images/products/product3.jpg" class="w-full" /> 
+
+    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition ">
+     <a href="view.html" class="text-white text-lg w-9 h-9 rounded-full bg-primary hover:bg-gray-800 transition flex  items-center justify-center " >
+          <i class="fas fa-search"></i> 
+     </a>
+     <a href="#" class="text-white text-lg w-9 h-9 rounded-full bg-primary hover:bg-gray-800 transition flex items-center justify-center "  >
+          <i class="fas fa-heart"></i> 
+     </a> 
+    </div>  
+     </div>
+
+    <div class="pt-4 pb-3 px-4 ">
+         <a href="view.html" >
+              <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition ">Guyer Chair </h4> 
+         </a>
+
+        <div class="flex items-baseline mb-1 space-x-2 " >
+         <p class="text-xl text-primary font-roboto font-semibold "> $45.00 </p>
+         <p class="text-sm text-gray-400 font-roboto  line-through "> $55.00 </p>
+        </div> 
+        <div class="flex items-center ">
+             <div class="flex gap-1 text-sm text-yellow-400 ">
+              <span><i class="fas fa-star"></i> </span>
+              <span><i class="fas fa-star"></i> </span>
+              <span><i class="fas fa-star"></i> </span>
+              <span><i class="fas fa-star"></i> </span>
+              <span><i class="fas fa-star"></i> </span>
+             </div>
+             <div class="text-xs text-gray-500 ml-3 ">(120)</div>
+
+        </div>
+    </div>
+
+    <a href="#" class="block w-full py-1 text-center text-white bg-primary border border-primary rounded-b font-medium hover:bg-transparent hover:text-primary transition " >
+         Add To Cart 
+    </a>  
+</div>
+
+ <!-- ---- End Single Product  ----- -->
+
+
+
+  <!-- ---- Start Single Product  ----- -->
+  <div class="group rounded bg-white shadow overflow-hidden ">
+     <div class="relative ">
+    <img src="/images/products/product4.jpg" class="w-full" /> 
+
+    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition ">
+     <a href="view.html" class="text-white text-lg w-9 h-9 rounded-full bg-primary hover:bg-gray-800 transition flex  items-center justify-center " >
+          <i class="fas fa-search"></i> 
+     </a>
+     <a href="#" class="text-white text-lg w-9 h-9 rounded-full bg-primary hover:bg-gray-800 transition flex items-center justify-center "  >
+          <i class="fas fa-heart"></i> 
+     </a> 
+    </div>  
+     </div>
+
+    <div class="pt-4 pb-3 px-4 ">
+         <a href="view.html" >
+              <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition ">Guyer Chair </h4> 
+         </a>
+
+        <div class="flex items-baseline mb-1 space-x-2 " >
+         <p class="text-xl text-primary font-roboto font-semibold "> $45.00 </p>
+         <p class="text-sm text-gray-400 font-roboto  line-through "> $55.00 </p>
+        </div> 
+        <div class="flex items-center ">
+             <div class="flex gap-1 text-sm text-yellow-400 ">
+              <span><i class="fas fa-star"></i> </span>
+              <span><i class="fas fa-star"></i> </span>
+              <span><i class="fas fa-star"></i> </span>
+              <span><i class="fas fa-star"></i> </span>
+              <span><i class="fas fa-star"></i> </span>
+             </div>
+             <div class="text-xs text-gray-500 ml-3 ">(120)</div>
+
+        </div>
+    </div>
+
+    <a href="#" class="block w-full py-1 text-center text-white bg-primary border border-primary rounded-b font-medium hover:bg-transparent hover:text-primary transition " >
+         Add To Cart 
+    </a>  
+</div>
+
+ <!-- ---- End Single Product  ----- --> 
+
+     </div>
+
+</div>
+
+
+
+     <!-- ---- End  Related Product --->
+
+    </div>   
+<!-- ---- End Product Content  --->
+
+
+</div>
+
+
+
+<!-- ---- End Product View --->
+   
+
+    <!-- ---- Start Footer  ----- -->
+    <Footer class="bg-white pt-16 pb-12 border-t border-gray-100 " >
+         <div class="container">
+              <div class="xl:grid xl:grid-cols-3 xl:gap-8 ">
+                   <div class="space-y-8 xl:col-span-1 ">
+                        <img src="/images/Shopping World.png" alt="LOGO" />
+                        <p class="text-gray-500 text-base font-roboto " >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing.
+                        </p>
+                        <div class="flex space-x-5">
+                             <a href="#" class="text-gray-400 hover:text-gray-500" >
+                                 <i class="fab fa-facebook-f"></i>
+                             </a>
+   
+                             <a href="#" class="text-gray-400 hover:text-gray-500" >
+                                 <i class="fab fa-twitter"></i>
+                             </a>
+   
+                             <a href="#" class="text-gray-400 hover:text-gray-500" >
+                                 <i class="fab fa-instagram"></i>
+                             </a>
+   
+                             <a href="#" class="text-gray-400 hover:text-gray-500" >
+                                 <i class="fab fa-linkedin-in"></i>
+                             </a>
+   
+                        </div>
+                   </div>
+   
+       <!-- ---- Footer link   ----- -->
+   
+   <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+        <div class="md:grid md:grid-cols-2 md:gap-8 ">
+             <div>
+                  <h3 class="text-sm font-semibold text-gray-400 tracking-wide uppercase " > Solutions </h3>
+                  <div class="mt-4 space-y-4 ">
+                       <a href="#" class="text-base text-gray-500 hover:text-gray-900 block font-semibold " >
+                            Marketing
+                       </a>
+                       <a href="#" class="text-base text-gray-500 hover:text-gray-900 block font-semibold " >
+                            Analytics
+                       </a>
+                       <a href="#" class="text-base text-gray-500 hover:text-gray-900 block font-semibold " >
+                            Commerce
+                       </a>
+                       <a href="#" class="text-base text-gray-500 hover:text-gray-900 block font-semibold " >
+                            Insights
+                       </a> 
+                  </div>
+             </div>
+   
+   
+   
+             <div class="mt-12 md:mt-0">
+                  <h3 class="text-sm font-semibold text-gray-400 tracking-wide uppercase " > Support </h3>
+                  <div class="mt-4 space-y-4 ">
+                       <a href="#" class="text-base text-gray-500 hover:text-gray-900 block font-semibold " >
+                            Pricing 
+                       </a>
+                       <a href="#" class="text-base text-gray-500 hover:text-gray-900 block font-semibold " >
+                            Documentation
+                       </a>
+                       <a href="#" class="text-base text-gray-500 hover:text-gray-900 block font-semibold " >
+                            Guides
+                       </a>
+                       <a href="#" class="text-base text-gray-500 hover:text-gray-900 block font-semibold " >
+                            API Status
+                       </a> 
+                  </div>
+             </div> 
+   
+   
+        </div>
+   
+   
+        <div class="md:grid md:grid-cols-2 md:gap-8 ">
+             <div>
+                  <h3 class="text-sm font-semibold text-gray-400 tracking-wide uppercase " > Company </h3>
+                  <div class="mt-4 space-y-4 ">
+                       <a href="#" class="text-base text-gray-500 hover:text-gray-900 block font-semibold " >
+                            About
+                       </a>
+                       <a href="#" class="text-base text-gray-500 hover:text-gray-900 block font-semibold " >
+                            Blog
+                       </a>
+                       <a href="#" class="text-base text-gray-500 hover:text-gray-900 block font-semibold " >
+                            Jobs
+                       </a>
+                       <a href="#" class="text-base text-gray-500 hover:text-gray-900 block font-semibold " >
+                            Service
+                       </a> 
+                  </div>
+             </div>
+   
+   
+   
+             <div class="mt-12 md:mt-0">
+                  <h3 class="text-sm font-semibold text-gray-400 tracking-wide uppercase " > Legal </h3>
+                  <div class="mt-4 space-y-4 ">
+                       <a href="#" class="text-base text-gray-500 hover:text-gray-900 block font-semibold " >
+                            Claim 
+                       </a>
+                       <a href="#" class="text-base text-gray-500 hover:text-gray-900 block font-semibold " >
+                            Privacy
+                       </a>
+                       <a href="#" class="text-base text-gray-500 hover:text-gray-900 block font-semibold " >
+                            Policy
+                       </a>
+                       <a href="#" class="text-base text-gray-500 hover:text-gray-900 block font-semibold " >
+                           Terms
+                       </a> 
+                  </div>
+             </div> 
+   
+   
+        </div>   
+   </div> 
+       <!-- ----End Footer link   ----- --> 
+   
+              </div>
+   
+         </div>
+   
+    </Footer> 
+     <!-- ---- End Footer   ----- -->
+   
+    <!-- ---- Copyright  ----- -->
+    <div class="bg-gray-800 py-4 ">
+         <div class="container flex items-center justify-between ">
+             <p class="text-white font-semibold " >© Easy Learning 2022</p>
+   
+           <div>
+             <img src="/images/methods.png" class="h-5" />
+           </div>
+   
+        </div>
+   
+    </div>
+   
+   
+     <!-- ---- End Copyright   ----- -->
+
+     
+<script>
+    let mainImg = document.getElementById('main-img')
+    let imgBars = document.getElementsByClassName('single-img')
+
+
+    for(let imgBar of imgBars){
+         imgBar.addEventListener('click', function(){
+              clearActive()
+              let imgPath = this.getAttribute('src')
+              mainImg.setAttribute('src',imgPath)
+              this.classList.add('border-primary')
+         })
+    }
+
+    function clearActive(){
+         for(let imgBar of imgBars){
+              imgBar.classList.remove('border-primary')
+         }
+    }
+
+
+</script>
+
+
+
+
+
+
+   
+   <script>
+        let menuBar = document.querySelector('#menuBar')
+        let mobileMenu = document.querySelector('#mobileMenu')
+        let closeMenu = document.querySelector('#closeMenu')
+   
+        menuBar.addEventListener('click', function(){
+             mobileMenu.classList.remove('hidden')
+        })
+   
+        closeMenu.addEventListener('click', function(){
+             mobileMenu.classList.add('hidden')
+        })
+   
+   </script>
+</body>
+</html>
